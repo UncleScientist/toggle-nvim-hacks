@@ -1,7 +1,7 @@
 noremap <Up> <Nop>
 noremap <Down> <Nop>
 noremap <Left> <Nop>
-noremap <Up> <Nop>
+"noremap <Up> <Nop>
 noremap <Right> <Nop>
 
 " -----------------------------------------------------------------------------
@@ -37,7 +37,7 @@ set foldenable
 set foldlevelstart=10
 set foldnestmax=10
 set ruler
-set laststatus=0
+set laststatus=2
 set splitright
 set splitbelow
 set backspace=indent,eol,start
@@ -52,6 +52,7 @@ set hidden
 set nomodeline
 
 let g:netrw_banner=0
+let g:rustfmt_autosave=1
 
 " -----------------------------------------------------------------------------
 "     - I love my blocky cursor! -
@@ -61,15 +62,18 @@ set guicursor=
 " -----------------------------------------------------------------------------
 "     - Generic key bindings -
 " -----------------------------------------------------------------------------
-let g:UltiSnipsExpandTrigger = '<leader>t'
+let g:UltiSnipsExpandTrigger = '<leader>p'
+let g:UltiSnipsForwardTrigger = '<c-b>'
 
-nmap <C-p> :FZF<CR>
+"nmap <C-p> :FZF<CR>
+nmap <C-p> :GFiles<CR>
 nmap <C-h> :vertical resize -4<CR>
 nmap <C-l> :vertical resize +4<CR>
 nmap <C-k> :resize +4<CR>
 nmap <C-j> :resize -4<CR>
 nmap <Leader>} ysiw}
-nmap <C-f> :Rg 
+"nmap <C-f> :Rg 
+nmap q :q<CR>
 
 " Terminal flapping
 tmap <C-w>k <C-\><C-n><C-w>k 

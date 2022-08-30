@@ -7,8 +7,12 @@ set textwidth=99
 " -----------------------------------------------------------------------------
 "     - Key mappings -
 " -----------------------------------------------------------------------------
-nmap <C-b> :Compile<CR>
+nmap <C-d> :wa<CR>:Compile<CR>
 nmap <Leader>x :Cargo run<CR>
+nmap <Leader>c :Cargo check<CR>
+nmap <leader>b :Cargo build<CR>
+nmap <Leader>t :wa<CR>:Cargo test<CR>
+nmap <Leader>r :wa<CR>:Cargo run<CR>
 nmap <S-k> :call RustDocs()<CR>
 nmap <Leader>f :RustFmt<CR>
 nmap gd <Plug>(rust-def)
@@ -16,9 +20,8 @@ nmap gv <Plug>(rust-def-vertical)
 nmap <leader>] :cnext<CR>
 nmap <leader>[ :cprev<CR>
 nmap <leader>d :DebugMain<CR>
-nmap <leader>b :Break<CR>
 nmap <leader>; :Step<CR>
-nmap ; :Over<CR>
+"nmap ; :Over<CR>
 
 " -----------------------------------------------------------------------------
 "     - Abbreviations -
