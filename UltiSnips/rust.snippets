@@ -1,3 +1,28 @@
+snippet aoc
+use crate::Runner;
+
+pub struct Aoc20$1_$2;
+
+impl Aoc20$1_$2 {
+    pub fn new() -> Self {
+        Self {}
+    }
+}
+
+impl Runner for Aoc20$1_$2 {
+    fn name(&self) -> (usize, usize) {
+        (20$1, $2)
+    }
+
+    fn part1(&mut self) -> Vec<String> {
+        vec!["unsolved".to_string()]
+    }
+    fn part2(&mut self) -> Vec<String> {
+        vec!["unsolved".to_string()]
+    }
+}
+endsnippet
+
 snippet cmt
 // -----------------------------------------------------------------------------
 //     - $1-
