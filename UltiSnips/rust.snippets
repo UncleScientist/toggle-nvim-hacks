@@ -1,11 +1,20 @@
+snippet leetlib
+pub mod lc_$1;
+pub use lc_$1::*;
+
+endsnippet
+
 snippet aoc
 use crate::Runner;
 
-pub struct Aoc20$1_$2;
+#[derive(Default)]
+pub struct Aoc20$1_$2 {
+	// insert items here (or not, i'm not the boss of you)
+}
 
 impl Aoc20$1_$2 {
     pub fn new() -> Self {
-        Self {}
+        Self::default()
     }
 }
 

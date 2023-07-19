@@ -20,7 +20,7 @@ let g:vebugger_path_gdb = 'gdb'
 "     - Key mappings -
 " -----------------------------------------------------------------------------
 nmap <Leader>x :split term://zig c++ % && ./a.out<cr>
-nmap <C-b> :split term://zig c++ %<cR>
+" nmap <C-b> :split term://zig c++ %<cR>
 
 
 " -----------------------------------------------------------------------------
