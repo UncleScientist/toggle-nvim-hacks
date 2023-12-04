@@ -5,7 +5,7 @@ pub use lc_$1::*;
 endsnippet
 
 snippet aoc
-use crate::Runner;
+use aoclib::Runner;
 
 #[derive(Default)]
 pub struct Aoc20$1_$2 {
@@ -26,11 +26,11 @@ impl Runner for Aoc20$1_$2 {
     fn parse(&mut self) {}
 
     fn part1(&mut self) -> Vec<String> {
-        crate::output("unsolved")
+        aoclib::output("unsolved")
     }
 
     fn part2(&mut self) -> Vec<String> {
-        crate::output("unsolved")
+        aoclib::output("unsolved")
     }
 }
 endsnippet
