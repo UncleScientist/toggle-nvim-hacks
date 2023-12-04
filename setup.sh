@@ -9,6 +9,7 @@ PACKAGES=(
     "tpope/vim-surround"
     "togglebyte/togglerust"
     "junegunn/fzf.vim"
+    "junegunn/fzf"
     "rust-lang/rust.vim"
     "vimwiki/vimwiki"
     "tpope/vim-fugitive"
