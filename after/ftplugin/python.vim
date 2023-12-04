@@ -10,3 +10,7 @@ setl nosmartindent
 nmap <Leader>x :!python %<CR>
 
 setlocal completeopt-=preview
+
+let g:black_linelength = 79
+nnoremap <space>f :Black<CR>
+nnoremap <C-d> :call flake8#Flake8()<CR>
