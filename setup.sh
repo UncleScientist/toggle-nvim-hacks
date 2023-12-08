@@ -14,6 +14,7 @@ PACKAGES=(
     "vimwiki/vimwiki"
     "tpope/vim-fugitive"
     "neovim/nvim-lspconfig"
+    "nvim-treesitter/nvim-treesitter"
     "zah/nim.vim"
 )
 

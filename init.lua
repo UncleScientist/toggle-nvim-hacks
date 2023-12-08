@@ -57,3 +57,14 @@ vim.lsp.handlers["textDocument/publishDiagnostics"] = vim.lsp.with(
         severity_sort = false,
 	}
 )
+
+require('nvim-treesitter.configs').setup({
+    incremental_selection = {
+        enable = true,
+        keymaps = {
+            init_selection = "<CR>",
+            node_incremental = "<TAB>",
+            node_decremental = "<S-TAB>",
+        },
+    },
+})
